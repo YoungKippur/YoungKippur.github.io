@@ -122,7 +122,7 @@ body {
 
 .header{
     width: 100%;
-    min-height: 5em;
+    min-height: 3em;
 
     padding: 1em 2em;
 
@@ -132,13 +132,9 @@ body {
     align-items: center;
 }
 .header .h1{
-    padding: 1em 0.5em;
-    border: 1px solid black;
     font-family: var(--tipo-principal);
     font-weight: 700;
-    background-color: rgba(0, 0, 0, 0.1);
     transition: all .2s ease;
-
 }
 .header .h1:hover{
  color: white;
@@ -150,10 +146,7 @@ body {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 0.5em;
-    border: 1px solid black;
     font-weight: 700;
-    background-color: rgba(0, 0, 0, 0.1);
 }
 .header .li{
     margin: 0 1em;
@@ -167,7 +160,7 @@ body {
 
 .main{
     background-color: rgba(0, 0, 0, 0.2);
-    margin: 1em 0;
+    margin: 0 0;
     text-align: center;
     z-index: 2;
 }
@@ -181,8 +174,18 @@ body {
     justify-content: center;
     align-items: center;
 }
-.section .info{
+.seccion .portImg{
+    margin: 1em 0 0;
+    width: 30%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+.info{
     font-size: 1.2em;
+    margin-top: 0em;
 }
 .seccion .h2{
     font-family: var(--tipo-titular);
@@ -265,6 +268,7 @@ body {
     font-size: 1em;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0em;
 }
 .about .h2{
     margin: 0 0 1rem;
