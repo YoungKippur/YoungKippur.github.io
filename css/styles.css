@@ -220,7 +220,6 @@ body {
 .seccion .p{}
 .seccion .grid{
     width: 90%;
-    background-color: lightcoral;
     margin: 1em 0;
     max-width: 40em;
 
@@ -231,7 +230,6 @@ body {
 .seccion .article{
     width: 100%;
     min-height: 20vh;
-    background-color: aqua;
 
     display: flex;
     flex-flow: column nowrap;
@@ -243,11 +241,9 @@ body {
 .seccion .a{}
 .seccion .figure{
     width: 100%;
-    background-color: red;
 }
 .seccion .img{
     width: 100%;
-    background-color: green;
 }
 .seccion .h4{
     width: 100%;
