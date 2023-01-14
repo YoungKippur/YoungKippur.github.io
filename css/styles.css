@@ -274,9 +274,10 @@ body {
     margin: 0 0 1rem;
 }
 .about .p{
-    margin: left auto;
+    margin:  1em 1em 1em;
     max-width: 40em;
     margin-left: 1em;
+    margin-right: 1em;
     text-align: left;
     font-size: 1.5em;
     font-weight: 500;
