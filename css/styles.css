@@ -5,6 +5,7 @@
     --negro: black;
     --tipo-titular: 'Playfair Display', serif;
     --tipo-principal: 'Inter', sans-serif;
+    --tipo-rara: 'Rock Salt', cursive;
 }
 
 * {
@@ -194,10 +195,11 @@ body {
     top: auto;
     left: 0;
     width: 100%;
-    height: 100%;
+    max-height: 100%;
+    min-height: 99%;
     z-index: -1;
-    filter: blur(6px);
-    -webkit-filter: blur(6px);
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
 }
 .section{
     margin: 1em;
@@ -280,7 +282,8 @@ body {
     justify-content: center;
     align-items: center;
 }
-.works{}
+.works{
+}
 .works .h2{
     margin: 0 0 1rem;
 }
@@ -291,6 +294,40 @@ body {
     align-items: center;
     margin-bottom: 0em;
 }
+.bkText{
+    position: relative;
+}
+.bkText:before{
+    font-family: var(--tipo-rara);
+    font-size: 0.5em;
+    margin: 3rem;
+    content: "Me gusta Progamar UWU";
+    position: absolute;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    top: -150%;
+    left: 150%;
+    z-index: -1;
+    animation: colorRotate 3s linear 0s infinite;
+}
+@keyframes colorRotate {
+    from {
+      color: #6666ff;
+    }
+    10% {
+      color: #0099ff;
+    }
+    50% {
+      color: #00ff00;
+    }
+    75% {
+      color: #ff3399;
+    }
+    100% {
+      color: #6666ff;
+    }
+  }
+
 .about .h2{
     margin: 0 0 1rem;
 }
