@@ -137,10 +137,10 @@ body {
 .header .h1{
     font-family: var(--tipo-principal);
     font-weight: 700;
-    transition: all .2s ease;
+    transition: all .4Ss ease;
 }
 .header .h1:hover{
- color: white;
+    animation: colorRotate 3s linear 0s infinite;
 }
 .header .h1 .a{}
 .header .nav{}
@@ -171,7 +171,6 @@ body {
 .seccion{
     width: 100%;
     min-height: 100vh;
-    margin: 3em 0;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -198,17 +197,17 @@ body {
     max-height: 100%;
     min-height: 99%;
     z-index: -1;
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
+    filter: blur(9px);
+    -webkit-filter: blur(9px);
 }
 .section{
     margin: 1em;
     padding: 1em;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.253);
     border-radius: 3%;
 }
 .content{
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .h2{
     font-family: var(--tipo-titular);
@@ -237,12 +236,13 @@ body {
     transition: all .2s ease;
 }
 .svg:hover{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 
 
-.seccion .p{}
+.seccion .p{
+}
 .seccion .grid{
     width: 90%;
     margin: 1em 0;
@@ -269,6 +269,7 @@ body {
 }
 .seccion .img{
     width: 100%;
+    border-radius: 3%;
 }
 .seccion .h4{
     width: 100%;
@@ -282,6 +283,15 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.frase{
+    background-color: black;
+    min-height: 40vh;
+    font-family: var(--tipo-rara);
+    font-size: 3em;
+    animation: colorRotate 3s linear 0s infinite;
+}
+
 .works{
 }
 .works .h2{
@@ -310,6 +320,26 @@ body {
     z-index: -1;
     animation: colorRotate 3s linear 0s infinite;
 }
+.about .h2{
+    margin: 0 0 1rem;
+}
+.about .texto{}
+.about .texto .p{
+    margin:  1em 1em 1em;
+    max-width: 40em;
+    margin-left: 1em;
+    margin-right: 1em;
+    text-align: left;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.footer{
+    animation: colorRotate 3s linear 0s infinite;
+    padding: 2em 0;
+    text-align: center;
+}
+.footer .span{}
 @keyframes colorRotate {
     from {
       color: #6666ff;
@@ -326,24 +356,4 @@ body {
     100% {
       color: #6666ff;
     }
-  }
-
-.about .h2{
-    margin: 0 0 1rem;
 }
-.about .texto{}
-.about .texto .p{
-    margin:  1em 1em 1em;
-    max-width: 40em;
-    margin-left: 1em;
-    margin-right: 1em;
-    text-align: left;
-    font-size: 1.4em;
-    font-weight: 500;
-}
-
-.footer{
-    padding: 2em 0;
-    text-align: center;
-}
-.footer .span{}
