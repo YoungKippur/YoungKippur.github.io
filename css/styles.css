@@ -6,6 +6,8 @@
     --tipo-titular: 'Playfair Display', serif;
     --tipo-principal: 'Inter', sans-serif;
     --tipo-rara: 'Rock Salt', cursive;
+    --navpor: 15%;
+    --otropor: 85%;
 }
 
 * {
@@ -121,44 +123,58 @@ body {
     100%{background-position:0% 50%}
 }
 
-.header{
-    z-index: 10;
-    width: 100%;
-    min-height: 3em;
-
-    padding: 1em 2em;
-
+.sidebar{
+    position: fixed;
+    width: var(--navpor);
+    height: 100vh;
+    font-size: 0.65em;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-flow:column wrap;
     align-items: center;
-    border-bottom: 1px solid rgb(0, 0, 0);
+    border-right: 3px solid black;
+    background-color: rgba(0, 0, 0, 0.2);
 }
-.header .h1{
+.nav {
+    margin-top: 150%;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+}
+.h1{
+    margin-top: 20%;
+    margin-bottom: 10%;
     font-family: var(--tipo-principal);
     font-weight: 700;
+    font-size: medium;
     transition: all .4Ss ease;
+    border-bottom: 1px solid black;
 }
-.header .h1:hover{
+.h1:hover{
     animation: colorRotate 3s linear 0s infinite;
 }
-.header .h1 .a{}
-.header .nav{}
-.header .ul{
+.ul{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow:column wrap;
     justify-content: space-between;
     align-items: center;
     font-weight: 700;
 }
-.header .li{
-    margin: 0 1em;
+.li2{
+    width: 100%;
+    margin: 100% auto;
+    transition: all .2s ease;
+    font-size: medium;
+    border-bottom: 1px solid black;
+}
+.li{
+    padding: 0 1em;
     transition: all .2s ease;
 }
-.header .li:hover{
+.li,
+.li2:hover{
     color: white;
 }
-.header .li .a{}
+.li .a{}
 
 
 .main{
@@ -169,7 +185,9 @@ body {
 }
 
 .seccion{
-    width: 100%;
+    width: var(--otropor);
+    position: relative;
+    float: right;
     min-height: 100vh;
     display: flex;
     flex-flow: column wrap;
@@ -285,11 +303,22 @@ body {
 }
 
 .frase{
-    background-color: black;
     min-height: 40vh;
     font-family: var(--tipo-rara);
     font-size: 3em;
     animation: colorRotate 3s linear 0s infinite;
+}
+.imgre{
+    position: absolute;
+    top: auto;
+    left: 0;
+    width: 100%;
+    max-height: 100%;
+    min-height: 99%;
+    z-index: -1;
+    filter: blur(9px);
+    -webkit-filter: blur(9px);
+    background-color: black;
 }
 
 .works{
@@ -335,6 +364,9 @@ body {
 }
 
 .footer{
+    width: var(--otropor);
+    position: relative;
+    float: right;
     animation: colorRotate 3s linear 0s infinite;
     padding: 2em 0;
     text-align: center;
